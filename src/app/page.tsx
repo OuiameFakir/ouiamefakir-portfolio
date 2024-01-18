@@ -1,9 +1,10 @@
 
 import Link from "next/link"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Box } from "@mui/material";
 export default function Home() {
   return (
-    <main  >
+    <Box >
       <div className="container fluide" >
           <h1 className="">
             Make anything possible with
@@ -37,8 +38,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-    </main>
+    </Box>
   )
 }
-
-// style={{background:"url(/bg.avif)" }} className="w-100"
