@@ -20,15 +20,15 @@ export default function Home() {
         <div className="contact">
           <p className="contact-text">
             <span className="fw-bold text-danger fs-5">
-              Thank you for visiting my portfolio 😊!
+              Thank you for visiting my portfolio &#128522;!
             </span>
             <br />
             I'm excited to connect with you. Whether you have a question about
             my work, want to collaborate on a project, or just want to say hello
-            👋, I'd love to hear from you. Feel free to reach out. I'll do my
-            best to get back to you as soon as possible. Looking forward to
-            hearing from you! I'm always open to new opportunities and excited
-            to connect with fellow enthusiasts in the field.
+            &#128075;, I'd love to hear from you. Feel free to reach out. I'll
+            do my best to get back to you as soon as possible. Looking forward
+            to hearing from you! I'm always open to new opportunities and
+            excited to connect with fellow enthusiasts in the field.
           </p>
 
           <div className="contact-info ">
