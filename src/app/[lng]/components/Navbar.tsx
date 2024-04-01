@@ -9,9 +9,6 @@ function Navbar() {
           <span className="text-warning">O</span>EF :)
         </a>
         <form className="d-flex">
-          <a className="text-light mr-6 text-decoration-none" href="#home">
-            Homme
-          </a>
           <a className="text-light mr-6 text-decoration-none" href="#about">
             About
           </a>

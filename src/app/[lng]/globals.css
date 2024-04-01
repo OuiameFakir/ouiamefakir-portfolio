@@ -2,6 +2,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+.section {
+  padding: 3rem;
+}
+
 .contact {
   padding: 3rem;
   text-align: justify;
@@ -20,7 +24,6 @@
   gap: 0.5rem;
 }
 .contact-info a {
-  /* width: 2rem; */
   display: flex;
   justify-content: start;
   align-items: center;
@@ -32,4 +35,24 @@
 }
 .contact-info a .icon {
   width: 1.2rem;
+}
+@media screen and (max-width: 750px) {
+  .contact {
+    padding: 3rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .contact-text {
+    text-align: justify;
+    width: 100%;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

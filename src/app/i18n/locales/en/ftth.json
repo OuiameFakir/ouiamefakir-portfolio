@@ -1,0 +1,55 @@
+{
+  "Header": {
+    "Title": "Business Connect Fiber",
+    "Subtitle": "All the power of high-speed internet for professionals!"
+  },
+  "Eligibility": {
+    "Title": "Fiber eligibility test",
+    "Subtitle": "Check if fiber is available where you live!",
+    "SearchTitle": "Search for an address or location near you:",
+    "SearchLabel": "Enter an address, street, boulevard...",
+    "SearchButtonTitle": "Automatic location",
+    "SearchOU": "OR",
+    "NoSearchResult": "No Location"
+  },
+  "card": {
+    "productName": "Business Connect Fiber",
+    "subTitle": " Mega",
+    "options": {
+      "title": "Fixed IP address",
+      "value": "+20 dh incl. tax/month"
+    },
+    "attributes": [
+      {
+        "title": "Inwi Calls",
+        "description": "to the company's inwi boxes and inwi mobiles",
+        "value": "Unlimited"
+      },
+      {
+        "title": "Landline calls",
+        "description": "to the national landline",
+        "value": "Unlimited"
+      },
+      {
+        "title": "Mobile calls",
+        "description": "towards national mobile and International Zone1A",
+        "value": "2 h"
+      },
+      {
+        "title": "Commitment duration",
+        "description": "",
+        "value": "0, 12, 24 months"
+      },
+      {
+        "title": "Equipment provided",
+        "description": "",
+        "value": "from 0 dh"
+      },
+      {
+        "title": "Satisfied or refunded",
+        "description": "",
+        "value": "valid for 8 days"
+      }
+    ]
+  }
+}
