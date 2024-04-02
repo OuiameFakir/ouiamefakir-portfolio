@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import styled from "@emotion/styled";
 import { Button } from "@mui/material";
 import theme from "../../utils/theme";
@@ -33,7 +32,7 @@ export const PrimaryButton = styled(
       {title}
     </Button>
   )
-)(() => ({
+)(({}) => ({
   color: theme.palette.customColors.oranged[300],
   backgroundColor: theme.palette.customColors.gray[200],
   border: `1px solid ${theme.palette.customColors.gray[500]}`,
