@@ -19,7 +19,7 @@ function Navbar() {
             Resume
           </a>
           <a className="text-light mr-6 text-decoration-none" href="#contact">
-            Contact Me
+            Contact
           </a>
         </form>
       </div>
