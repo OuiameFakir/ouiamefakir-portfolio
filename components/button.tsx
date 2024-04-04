@@ -1,7 +1,7 @@
 "use client";
 import styled from "@emotion/styled";
 import { Button } from "@mui/material";
-import theme from "../../utils/theme";
+import theme from "../utils/theme";
 import { ReactNode } from "react";
 
 interface PrimaryButtonProps {
