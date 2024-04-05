@@ -1,13 +1,11 @@
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import ecomerce from "@/_assets/images/ecommerce.png";
-import { PrimaryButton } from "./button";
+import { PrimaryButton } from "../button";
 import { Box } from "@mui/material";
 import { StaticImageData } from "next/image";
+import { CardContainer, CardFooter, CardImgContainer } from "./card.style";
 
 export default function ProjectCard({
   projectName,
@@ -24,16 +22,14 @@ export default function ProjectCard({
 }) {
   return (
     <Box sx={{ width: "100%" }}>
-      <Card sx={{ display: "flex" }}>
-        <CardMedia
-          component="img"
-          sx={{
-            width: "60%",
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-            padding: "0.5rem",
-          }}
-          image={img.src}
-        />
+      <CardContainer>
+        <CardImgContainer>
+          <CardMedia
+            component="img"
+            image={img.src}
+            sx={{ height: "100%", width: "100%" }}
+          />
+        </CardImgContainer>
         <Box sx={{ display: "flex", flexDirection: "column" }}>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -43,12 +39,22 @@ export default function ProjectCard({
               {projectDescription}
             </Typography>
           </CardContent>
-          <CardActions>
-            {/* <PrimaryButton title={"Source Code"} />
-          <PrimaryButton title={"Web Site Hosted"} /> */}
-          </CardActions>
+          <CardFooter>
+            <PrimaryButton
+              title={"Source Code"}
+              handleClick={() => {
+                window.location.href = code;
+              }}
+            />
+            <PrimaryButton
+              title={"Web Site Hosted"}
+              handleClick={() => {
+                window.location.href = site;
+              }}
+            />
+          </CardFooter>
         </Box>
-      </Card>
+      </CardContainer>
     </Box>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Navbar() {
+export default function Navbar() {
   return (
     <nav className="navbar navbar-dark bg-dark p-3 sticky-top">
       <div className="container-fluid">
@@ -26,5 +26,3 @@ function Navbar() {
     </nav>
   );
 }
-
-export default Navbar;

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { CardsContainer, Title } from "../portfolio.style";
-import ProjectCard from "@/components/card";
+import ProjectCard from "@/components/card/card";
 import { projectData } from "@/_assets/variables/projectsData";
 
 export default function Projects({ lng }: { lng: string }) {
