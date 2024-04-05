@@ -2,13 +2,13 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Resume from "./components/resume";
 import Contact from "./components/contact";
 import Projects from "./components/projects";
-import Navbar from "./components/navbar";
+// import Navbar from "./components/navbar";
 import About from "./components/about";
 
 export default function Home({ params: { lng } }: { params: { lng: string } }) {
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
       <section id="about" className="section">
         <About />
       </section>
