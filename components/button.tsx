@@ -11,7 +11,6 @@ interface PrimaryButtonProps {
   startIcon?: ReactNode;
   endIcon?: ReactNode;
 }
-
 export const PrimaryButton = styled(
   ({
     title,
@@ -33,7 +32,7 @@ export const PrimaryButton = styled(
     </Button>
   )
 )(({}) => ({
-  color: theme.palette.customColors.oranged[300],
+  color: theme.palette.customColors.gray[900],
   backgroundColor: theme.palette.customColors.gray[200],
   border: `1px solid ${theme.palette.customColors.gray[500]}`,
   alignSelf: "stretch",
@@ -50,6 +49,6 @@ export const PrimaryButton = styled(
   "&:hover": {
     backgroundColor: theme.palette.customColors.gray[50],
     fontSize: "0.9rem",
-    color: theme.palette.customColors.oranged[500],
+    color: theme.palette.customColors.gray[500],
   },
 }));

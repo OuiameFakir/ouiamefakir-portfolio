@@ -32,7 +32,7 @@ export const projectData = [
     id: 3,
     img: ecomerce,
     title: "Sphere Style",
-    desc: "A ecommerce web application, this store offer diffrent type and categories of products. Developped using ReactJS, and Bootstrap.",
+    desc: "An ecommerce web application, this store offer diffrent type and categories of products. Developped using ReactJS, and Bootstrap.",
     code_url: "https://github.com/OuiameFakir/e-commerce-store",
     site_url: "https://e-commerce-store-application.vercel.app/",
   },
