@@ -8,7 +8,9 @@ export function getOptions(
   ns: string | string[] = defaultNS
 ) {
   return {
+    // debug: true,
     supportedLngs: languages,
+    // preload: languages,
     fallbackLng,
     lng,
     fallbackNS: defaultNS,

@@ -1,16 +1,18 @@
 "use client";
 import React from "react";
-import { CardsContainer, Title } from "../portfolio.style";
+import { CardsContainer, Subtitle, Title } from "../portfolio.style";
 import ProjectCard from "@/components/card/card";
-import { projectData } from "@/_assets/variables/projectsData";
-
+import { Data } from "@/_assets/variables/projectsData";
 export default function Projects({ lng }: { lng: string }) {
+  const projectData = Data({ params: { lng } });
   return (
     <div>
-      <Title>PROJECTS</Title>
+      <Title>My Projects</Title>
+      <Subtitle>My Recent Work</Subtitle>
       <CardsContainer>
         {projectData.map((item) => (
           <ProjectCard
+            id={item.id}
             projectName={item.title}
             projectDescription={item.desc}
             img={item.img}

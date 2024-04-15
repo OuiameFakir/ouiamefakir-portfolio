@@ -1,0 +1,11 @@
+export { default as react } from "./react.png";
+export { default as frontend } from "./frontend.png";
+export { default as certifEnsa } from "./certifEnsa.png";
+export { default as ccna } from "./ccna.png";
+export { default as dns } from "./dns.png";
+export { default as dynamicAccess } from "./dynamicAccess.png";
+export { default as ipv6 } from "./ipv6.png";
+export { default as network } from "./network101.png";
+export { default as protocols } from "./protocols.png";
+export { default as routing } from "./routing.png";
+export { default as security } from "./security101.png";
