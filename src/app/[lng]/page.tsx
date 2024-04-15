@@ -1,5 +1,4 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import Resume from "./components/resume";
 import Contact from "./components/contact";
 import Projects from "./components/projects";
 import Navbar from "./components/navbar";

@@ -21,7 +21,7 @@ export default function About() {
       </Name>
       <AboutDesc>
         An enthusiastic Front-End Developer dedicated to crafting captivating
-        and intuitive web solutions. I've sharpened my expertise in NextJS,
+        and intuitive web solutions. I have sharpened my expertise in NextJS,
         ReactJS, TypeScript, Bootstrap, SaaS, CSS, and HTML.
       </AboutDesc>
       {/* Resume */}

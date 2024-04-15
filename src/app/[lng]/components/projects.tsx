@@ -12,6 +12,7 @@ export default function Projects({ lng }: { lng: string }) {
       <CardsContainer>
         {projectData.map((item) => (
           <ProjectCard
+            key={item.id}
             id={item.id}
             projectName={item.title}
             projectDescription={item.desc}

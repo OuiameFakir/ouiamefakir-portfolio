@@ -13,12 +13,12 @@ export default function Skills() {
       <Subtitle>What Skills I Have</Subtitle>
       <CardsContainer>
         {skillsData.map((item) => (
-          <SkillsCard id={item.id} skill={item.skill} />
+          <SkillsCard key={item.id} id={item.id} skill={item.skill} />
         ))}
       </CardsContainer>
       <CardsContainer>
         {certifData.map((item) => (
-          <CertifCard id={item.id} img={item.img} />
+          <CertifCard key={item.id} id={item.id} img={item.img} />
         ))}
       </CardsContainer>
     </div>

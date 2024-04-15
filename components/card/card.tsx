@@ -24,7 +24,7 @@ export default function ProjectCard({
   site: string;
 }) {
   return (
-    <CardContainer>
+    <CardContainer key={id}>
       <CardMedia
         component="img"
         image={img.src}
