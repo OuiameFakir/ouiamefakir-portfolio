@@ -4,16 +4,10 @@ import theme from "@/utils/theme";
 
 export const CardContainer = styled(Box)({
   display: "flex",
-  boxShadow: "4px 4px 6px rgba(0, 0, 0, 0.1)",
+  width: "100%",
+  boxShadow: "4px 4px 20px rgba(0, 0, 0, 0.2)",
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
-  },
-});
-export const CardImgContainer = styled(Box)({
-  width: "60%",
-  background: "red",
-  [theme.breakpoints.down("sm")]: {
-    width: "100%",
   },
 });
 export const CardFooter = styled(Box)({
@@ -23,4 +17,24 @@ export const CardFooter = styled(Box)({
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
   },
+});
+
+// certifications Cards
+
+export const CertifCardImgContainer = styled(Box)({
+  width: "15rem",
+  height: "10rem",
+});
+export const CertifCardContainer = styled(Box)({
+  display: "flex",
+  gap: "2rem",
+  flexDirection: "row",
+  boxShadow: "4px 4px 20px rgba(0, 0, 0, 0.2)",
+});
+
+// Skills Card
+export const SkillsCardContainer = styled(Box)({
+  boxShadow: "4px 4px 20px rgba(0, 0, 0, 0.2)",
+  padding: "0.7rem",
+  borderRadius: "0.5rem",
 });

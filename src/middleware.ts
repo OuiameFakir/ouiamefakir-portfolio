@@ -1,3 +1,16 @@
+// import { NextResponse, NextRequest } from "next/server";
+
+// export function middleware(request: NextRequest) {
+//   const pathname = request.nextUrl.pathname;
+//   return NextResponse.next();
+// }
+
+// export const config = {
+//   // Apply the middleware to a specific path
+//   matcher:
+//     "/((?!api|_next/static|_next/image|manifest.json|assets|favicon.ico).*)",
+// };
+
 import { NextResponse, NextRequest } from "next/server";
 import { fallbackLng, languages } from "./app/i18n/settings";
 

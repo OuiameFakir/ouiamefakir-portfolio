@@ -1,0 +1,9 @@
+{
+  "Des": {
+    "eshop": "Eshop B2B website, developped during my internship at inwi using NextJS, ReactJS, TypeScript, Material UI.",
+    "todos": "A To do list application. Developped using ReactJS, TypeScript, and Bootstrap.",
+    "ecomerce": "An ecommerce web application, this store offer diffrent type and categories of products. Developped using ReactJS, and Bootstrap.",
+    "games": "A website of games. Developed using HTML, CSS, and Bootstrap.",
+    "note": "A website to take, delete, edit notes. Developed using HTML, CSS, JavaScript."
+  }
+}
