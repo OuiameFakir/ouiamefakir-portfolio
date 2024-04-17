@@ -4,20 +4,10 @@ import ecomerce from "@/_assets/images/ecommerce.png";
 import todos from "@/_assets/images/Todo-List.png";
 import eshop from "@/_assets/images/eshop-b2b.png";
 import { useTranslation } from "@/src/app/i18n/client";
-// import { useTranslation } from "@/src/app/i18n/client";
 
 export function Data({ params: { lng } }: { params: { lng: string } }) {
-  // const { t } = useTranslation(lng, "projects");
   const { t } = useTranslation(lng, "projects");
   const projectData = [
-    // {
-    //   id: 0,
-    //   img:portfolio ,
-    //   title: "",
-    //   desc: "",
-    //   code_url: "",
-    //   site_url: "",
-    // },
     {
       id: 1,
       img: eshop,

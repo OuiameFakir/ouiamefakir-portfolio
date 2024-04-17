@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar";
 export default function Home({ params: { lng } }: { params: { lng: string } }) {
   return (
     <main>
-      <Navbar />
+      <Navbar lng={lng} />
       <section id="about" className="section">
         <About />
       </section>

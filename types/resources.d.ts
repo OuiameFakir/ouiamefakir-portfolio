@@ -1,4 +1,7 @@
 interface Resources {
+  common: {
+    lang: string;
+  };
   projects: {
     Des: {
       eshop: string;
