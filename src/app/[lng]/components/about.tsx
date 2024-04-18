@@ -8,22 +8,20 @@ import {
   Title,
 } from "../portfolio.style";
 import { PrimaryButton } from "@/components/button";
+import { useTranslation } from "../../i18n/client";
 
-export default function About() {
+export default function About({ lng }: { lng: string }) {
+  const { t } = useTranslation(lng, "about");
   const pdf_en = `/en/Resume.pdf`;
   const pdf_fr = `/fr/CV.pdf`;
   return (
     <div>
-      <Title>About Me</Title>
-      <Subtitle>Hello I am</Subtitle>
+      <Title>{t("about_me")}</Title>
+      <Subtitle>{t("hello")}</Subtitle>
       <Name>
-        <span className="text-danger">Ouiame EL FAKIR</span>
+        <span className="text-warning">Ouiame EL FAKIR</span>
       </Name>
-      <AboutDesc>
-        An enthusiastic Front-End Developer dedicated to crafting captivating
-        and intuitive web solutions. I have sharpened my expertise in NextJS,
-        ReactJS, TypeScript, Bootstrap, SaaS, CSS, and HTML.
-      </AboutDesc>
+      <AboutDesc>{t("about_me_description")}</AboutDesc>
       {/* Resume */}
       <ResumeDownloadContainer>
         <a
@@ -31,14 +29,14 @@ export default function About() {
           download="Ouiame EL FAKIR RESUME.pdf"
           className="text-decoration-none"
         >
-          <PrimaryButton title={"My resume in english"} />
+          <PrimaryButton title={t("resume_en")} />
         </a>
         <a
           href={pdf_fr}
           download="Ouiame EL FAKIR CV.pdf"
           className="text-decoration-none"
         >
-          <PrimaryButton title={"My resume in french"} />
+          <PrimaryButton title={t("resume_fr")} />
         </a>
       </ResumeDownloadContainer>
     </div>

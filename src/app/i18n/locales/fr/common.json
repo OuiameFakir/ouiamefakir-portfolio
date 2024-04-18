@@ -1,3 +1,7 @@
 {
-  "lang": "Langues"
+  "lang": "Langues",
+  "about": "Profil",
+  "projects": "Projets",
+  "skills": "Compétences",
+  "contact": "Contact"
 }

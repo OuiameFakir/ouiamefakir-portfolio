@@ -10,13 +10,13 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
     <main>
       <Navbar lng={lng} />
       <section id="about" className="section">
-        <About />
+        <About lng={lng} />
       </section>
       <section id="projects" className="section">
         <Projects lng={lng} />
       </section>
       <section id="skills" className="section">
-        <Skills />
+        <Skills lng={lng} />
       </section>
       <section id="contact" className="section">
         <Contact lng={lng} />

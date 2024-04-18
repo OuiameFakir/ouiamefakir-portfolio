@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -15,48 +16,41 @@ import {
   Subtitle,
   Title,
 } from "../portfolio.style";
+import { useTranslation } from "../../i18n/client";
 export default function Contact({ lng }: { lng: string }) {
+  const { t } = useTranslation(lng, "contact");
   return (
     <div>
-      <Title>Contact Me</Title>
-      <Subtitle>Get In Touch</Subtitle>
+      <Title>{t("contact_me")}</Title>
+      <Subtitle>{t("get_in_touch")}</Subtitle>
       <ContactContainer>
         <ContactText>
-          <span className="fw-bold text-danger fs-5">
-            Thank you for visiting my portfolio &#128522;!
-          </span>
+          <span className="fw-bold text-warning fs-5">{t("tnx")}</span>
           <br />
-          I&apos;m excited to connect with you. Whether you have a question
-          about my work, want to collaborate on a project, or just want to say
-          hello &#128075;, I&apos;d love to hear from you. Feel free to reach
-          out. I&apos;ll do my best to get back to you as soon as possible.
-          <br />
-          Looking forward to hearing from you! I&apos;m always open to new
-          opportunities and excited to connect with fellow enthusiasts in the
-          field.
+          {t("contact_text")}
         </ContactText>
         <ContactInfo>
           <ContactLink href="tel:+212699099123">
             <IconContainer>
-              <FontAwesomeIcon icon={faPhone} className="text-danger" />
+              <FontAwesomeIcon icon={faPhone} className="text-secondary" />
             </IconContainer>{" "}
             +212 699099123
           </ContactLink>
           <ContactLink href="mailto:ouiamefakir@gmail.com">
             <IconContainer>
-              <FontAwesomeIcon icon={faEnvelope} className="text-warning" />
+              <FontAwesomeIcon icon={faEnvelope} className="text-secondary" />
             </IconContainer>
             ouiamefakir@gmail.com
           </ContactLink>
           <ContactLink href="https://www.linkedin.com/in/ouiame-el-fakir/">
             <IconContainer>
-              <FontAwesomeIcon icon={fabLinkedin} className="text-danger" />
+              <FontAwesomeIcon icon={fabLinkedin} className="text-secondary" />
             </IconContainer>
             linkedin.com/in/ouiame-el-fakir
           </ContactLink>
           <ContactLink href=" https://github.com/OuiameFakir">
             <IconContainer>
-              <FontAwesomeIcon icon={fabGithub} className="text-warning" />
+              <FontAwesomeIcon icon={fabGithub} className="text-secondary" />
             </IconContainer>{" "}
             github.com/OuiameFakir
           </ContactLink>

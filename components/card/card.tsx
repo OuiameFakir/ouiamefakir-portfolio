@@ -7,8 +7,10 @@ import { Box } from "@mui/material";
 import { StaticImageData } from "next/image";
 import { CardContainer, CardFooter } from "./card.style";
 import theme from "@/utils/theme";
+import { useTranslation } from "@/src/app/i18n/client";
 
 export default function ProjectCard({
+  lng,
   id,
   projectName,
   projectDescription,
@@ -16,6 +18,7 @@ export default function ProjectCard({
   code,
   site,
 }: {
+  lng: string;
   id: number;
   projectName: string;
   projectDescription: string;
@@ -23,6 +26,7 @@ export default function ProjectCard({
   code: string;
   site: string;
 }) {
+  const { t } = useTranslation(lng, "projects");
   return (
     <CardContainer key={id}>
       <CardMedia
@@ -46,13 +50,13 @@ export default function ProjectCard({
         </CardContent>
         <CardFooter>
           <PrimaryButton
-            title={"Source Code"}
+            title={t("code_url")}
             handleClick={() => {
               window.location.href = code;
             }}
           />
           <PrimaryButton
-            title={"Web Site Hosted"}
+            title={t("site_url")}
             handleClick={() => {
               window.location.href = site;
             }}

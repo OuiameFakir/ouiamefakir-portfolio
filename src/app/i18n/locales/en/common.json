@@ -1,3 +1,8 @@
 {
-    "lang": "Languages"
+  "lang": "Languages",
+  "about": "About",
+  "projects": "Projects",
+  "skills": "Skills",
+  "contact": "Contact"
+ 
 }

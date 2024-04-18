@@ -1,9 +1,13 @@
 {
+  "my_projects": "Mes Projets",
+  "my_recent_work": "Mes projets récents",
   "Des": {
     "eshop": "Site Eshop B2B, développé lors de mon stage chez inwi en utilisant NextJS, ReactJS, TypeScript, Material UI.",
     "todos": "Une application de liste de tâches. Développée à l'aide de ReactJS, TypeScript et Bootstrap.",
     "ecomerce": "Application Web de commerce électronique, cette boutique propose différents types et catégories de produits. Développé à l'aide de ReactJS et Bootstrap.",
     "games": "Un site Web de jeux. Développé en utilisant HTML, CSS et Bootstrap.",
     "note": "Un site Web pour prendre, supprimer et modifier des notes. Développé en utilisant HTML, CSS, JavaScript."
-  }
+  },
+  "code_url": "Le Code Source",
+  "site_url": "Le Site Web Hébergé"
 }

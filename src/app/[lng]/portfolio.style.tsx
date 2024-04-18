@@ -26,7 +26,11 @@ export const CardsContainer = styled(Box)({
   display: "flex",
   flexWrap: "wrap",
   gap: "1rem",
-  padding: "4rem",
+  padding: "1rem",
+  paddingInline: "10rem",
+  [theme.breakpoints.down("md")]: {
+    paddingInline: "2rem",
+  },
 });
 
 // About Me
@@ -39,8 +43,8 @@ export const Subtitle = styled(Box)({
 });
 export const Name = styled(Box)({
   fontFamily: `${theme.typography.fontFamily}`,
-  fontWeight: 500,
-  fontSize: "1.2rem",
+  fontWeight: 600,
+  fontSize: "1.1rem",
   textAlign: "center",
 });
 export const AboutDesc = styled(Box)({
@@ -59,22 +63,23 @@ export const ContactContainer = styled(Box)({
   fontFamily: `${theme.typography.fontFamily}`,
   fontWeight: 400,
   fontSize: "1rem",
-  paddingInline: "7rem",
   padding: "3rem",
+  paddingInline: "10rem",
   textAlign: "justify",
   display: "flex",
   gap: "3rem",
-  [theme.breakpoints.down("xs")]: {
+  [theme.breakpoints.down("sm")]: {
     display: "flex",
     flexDirection: "column",
     gap: "1.5rem",
+    paddingInline: "3rem",
   },
 });
 export const ContactText = styled(Box)({
   textAlign: "justify",
   width: "70%",
   fontSize: "0.9rem",
-  [theme.breakpoints.down("xs")]: {
+  [theme.breakpoints.down("sm")]: {
     width: "100%",
   },
 });

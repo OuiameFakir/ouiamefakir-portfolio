@@ -21,6 +21,10 @@ export const CardFooter = styled(Box)({
 
 // certifications Cards
 
+export const CertifCardPrincipalImgContainer = styled(Box)({
+  width: "20rem",
+  height: "15rem",
+});
 export const CertifCardImgContainer = styled(Box)({
   width: "15rem",
   height: "10rem",
