@@ -9,54 +9,66 @@ export const skillsData = [
   },
   {
     id: 3,
-    skill: "TypScript",
+    skill: "Framer Motion",
   },
   {
     id: 4,
-    skill: "JavaScript",
+    skill: "i18next",
   },
   {
     id: 5,
-    skill: "Material UI",
+    skill: "Formik & Yup",
   },
   {
     id: 6,
-    skill: "Bootstrap",
+    skill: "TypScript",
   },
   {
     id: 7,
-    skill: "Git/Github",
+    skill: "JavaScript",
   },
   {
     id: 8,
-    skill: "CSS/Saas",
+    skill: "Material UI",
   },
   {
     id: 9,
-    skill: "Java",
+    skill: "Bootstrap",
   },
   {
     id: 10,
-    skill: "C/C++",
+    skill: "Git/Github",
   },
   {
     id: 11,
-    skill: "PHP",
+    skill: "CSS/Saas",
   },
   {
     id: 12,
-    skill: "MySQL",
+    skill: "Java",
   },
   {
     id: 13,
-    skill: "Networking",
+    skill: "C/C++",
   },
   {
     id: 14,
-    skill: "Virtualisation",
+    skill: "PHP",
   },
   {
     id: 15,
+    skill: "MySQL",
+  },
+  {
+    id: 16,
+    skill: "Networking",
+  },
+  {
+    id: 17,
+    skill: "Virtualisation",
+  },
+  {
+    id: 18,
     skill: "System Administration",
   },
 ];

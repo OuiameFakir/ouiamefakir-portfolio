@@ -1,3 +1,4 @@
+"use client";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Contact from "./components/contact";
 import Projects from "./components/projects";
@@ -9,6 +10,7 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
   return (
     <main>
       <Navbar lng={lng} />
+
       <section id="about" className="section">
         <About lng={lng} />
       </section>

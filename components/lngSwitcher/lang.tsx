@@ -7,7 +7,11 @@ import { LngSelectContainer, StyledFormControl } from "./lang.style";
 const LngSwitcher = ({ lng, path }: { lng: string; path?: string }) => {
   const { t } = useTranslation(lng, "common");
   return (
-    <StyledFormControl fullWidth variant="standard">
+    <StyledFormControl
+      fullWidth
+      variant="standard"
+      style={{ minWidth: "120px" }}
+    >
       <Select
         value="langues"
         onChange={(e) => {
