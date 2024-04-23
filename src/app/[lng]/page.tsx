@@ -5,12 +5,13 @@ import Projects from "./components/projects";
 import About from "./components/about";
 import Skills from "./components/skills";
 import Navbar from "./components/Navbar";
-
+import { ParticlesBackground } from "@/components/background/particlesBackground";
+import "./globals.css";
 export default function Home({ params: { lng } }: { params: { lng: string } }) {
   return (
     <main>
       <Navbar lng={lng} />
-
+      <ParticlesBackground />
       <section id="about" className="section">
         <About lng={lng} />
       </section>
