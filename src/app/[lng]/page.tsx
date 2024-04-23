@@ -7,6 +7,7 @@ import Skills from "./components/skills";
 import Navbar from "./components/Navbar";
 import { ParticlesBackground } from "@/components/background/particlesBackground";
 import "./globals.css";
+import Footer from "./components/footer";
 export default function Home({ params: { lng } }: { params: { lng: string } }) {
   return (
     <main>
@@ -24,6 +25,7 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
       <section id="contact" className="section">
         <Contact lng={lng} />
       </section>
+      <Footer />
     </main>
   );
 }
