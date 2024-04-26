@@ -41,4 +41,6 @@ export const SkillsCardContainer = styled(Box)({
   boxShadow: "4px 4px 20px rgba(0, 0, 0, 0.2)",
   padding: "0.7rem",
   borderRadius: "0.5rem",
+  zIndex: 10,
+  backgroundColor: "white",
 });

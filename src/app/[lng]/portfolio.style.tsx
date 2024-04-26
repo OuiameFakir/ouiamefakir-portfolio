@@ -79,6 +79,7 @@ export const ContactText = styled(Box)({
   textAlign: "justify",
   width: "70%",
   fontSize: "0.9rem",
+  backgroundColor: "white",
   [theme.breakpoints.down("sm")]: {
     width: "100%",
   },

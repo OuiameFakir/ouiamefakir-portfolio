@@ -16,12 +16,14 @@ export default function About({ lng }: { lng: string }) {
   const pdf_fr = `/fr/CV.pdf`;
   return (
     <div>
-      <Title>{t("about_me")}</Title>
-      <Subtitle>{t("hello")}</Subtitle>
-      <Name>
-        <span className="text-warning">Ouiame EL FAKIR</span>
-      </Name>
-      <AboutDesc>{t("about_me_description")}</AboutDesc>
+      <div style={{ backgroundColor: "white" }}>
+        <Title>{t("about_me")}</Title>
+        <Subtitle>{t("hello")}</Subtitle>
+        <Name>
+          <span className="text-warning">Ouiame EL FAKIR</span>
+        </Name>
+        <AboutDesc>{t("about_me_description")}</AboutDesc>
+      </div>
       {/* Resume */}
       <ResumeDownloadContainer>
         <a

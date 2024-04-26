@@ -51,7 +51,14 @@ export default function ProjectCard({
             },
           }}
         />
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            zIndex: "1",
+            backgroundColor: "white",
+          }}
+        >
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {projectName}
