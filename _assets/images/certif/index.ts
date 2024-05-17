@@ -9,3 +9,4 @@ export { default as network } from "./network101.png";
 export { default as protocols } from "./protocols.png";
 export { default as routing } from "./routing.png";
 export { default as security } from "./security101.png";
+export { default as php } from "./PHP.png";

@@ -10,18 +10,23 @@ import {
   ipv6,
   protocols,
   routing,
+  php,
 } from "@/_assets/images/certif/index";
-import { useTranslation } from "@/src/app/i18n/client";
 
 export const certifData = [
   {
-    id: 1,
+    id: 0,
     img: react,
     principal: true,
   },
   {
-    id: 2,
+    id: 1,
     img: frontend,
+    principal: true,
+  },
+  {
+    id: 2,
+    img: php,
     principal: true,
   },
   {
