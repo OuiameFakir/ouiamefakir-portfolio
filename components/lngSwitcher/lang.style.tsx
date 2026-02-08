@@ -1,5 +1,5 @@
 import { Box, FormControl } from "@mui/material";
-import styled from "@emotion/styled";
+import { styled } from "@mui/material/styles";
 
 export const LngSelectContainer = styled(Box)({
   display: "flex",
@@ -10,5 +10,5 @@ export const LngSelectContainer = styled(Box)({
 
 export const StyledFormControl = styled(FormControl)({
   "& .MuiSelect-icon": { display: "none" },
-  "& .MuiInputBase-input": { color: "white" },
+  "& .MuiInputBase-input": { color: "inherit" },
 });

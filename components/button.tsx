@@ -1,7 +1,6 @@
 "use client";
-import styled from "@emotion/styled";
 import { Button } from "@mui/material";
-import theme from "../utils/theme";
+import { styled } from "@mui/material/styles";
 import { ReactNode } from "react";
 
 interface PrimaryButtonProps {
@@ -31,24 +30,26 @@ export const PrimaryButton = styled(
       {title}
     </Button>
   )
-)(({}) => ({
-  color: theme.palette.customColors.gray[900],
-  backgroundColor: theme.palette.customColors.gray[200],
-  border: `1px solid ${theme.palette.customColors.gray[500]}`,
+)(({ theme }) => ({
+  color: theme.palette.text.primary,
+  backgroundColor: theme.palette.background.paper,
+  border: `1px solid ${theme.palette.divider}`,
   alignSelf: "stretch",
   display: "flex",
   padding: "0.75rem 2rem",
   justifyContent: "center",
   alignItems: "center",
   gap: "0.5rem",
-  borderRadius: "0.5rem",
+  borderRadius: "0.75rem",
   width: "100%",
   textTransform: "none",
-  fontFamily: `${theme.typography.fontFamily}`,
-  fontSize: "0.8rem",
+  fontFamily: theme.typography.fontFamily,
+  fontSize: "0.9rem",
+  transition: "transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease",
+  boxShadow: theme.shadows[1],
   "&:hover": {
-    backgroundColor: theme.palette.customColors.gray[50],
-    fontSize: "0.9rem",
-    color: theme.palette.customColors.gray[500],
+    backgroundColor: theme.palette.action.hover,
+    transform: "translateY(-1px)",
+    boxShadow: theme.shadows[4],
   },
 }));

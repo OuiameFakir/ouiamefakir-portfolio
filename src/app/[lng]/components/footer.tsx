@@ -1,53 +1,77 @@
-import React from "react";
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import IconButton from "@mui/material/IconButton";
+import Link from "@mui/material/Link";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import { FiGithub, FiLinkedin, FiMail, FiPhone } from "react-icons/fi";
 
 function Footer() {
   return (
-    <div>
-      <footer className="bg-dark text-center text-white">
-        <div className="container p-4 pb-0">
-          <section className="mb-4">
-            {/* Phone */}
-            <a
-              className="btn btn-outline-light btn-floating m-1"
-              href="tel:+212699099123"
-              role="button"
-            >
-              <i className="fas fa-phone"></i>
-            </a>
+    <Box
+      component="footer"
+      sx={{
+        mt: 8,
+        py: 4,
+        borderTop: 1,
+        borderColor: "divider",
+        bgcolor: "background.paper",
+      }}
+    >
+      <Container maxWidth="lg">
+        <Stack direction="row" spacing={1} justifyContent="center">
+          <IconButton
+            component={Link}
+            href="tel:+212699099123"
+            aria-label="Phone"
+            color="inherit"
+          >
+            <FiPhone />
+          </IconButton>
+          <IconButton
+            component={Link}
+            href="mailto:ouiamefakir@gmail.com"
+            aria-label="Email"
+            color="inherit"
+          >
+            <FiMail />
+          </IconButton>
+          <IconButton
+            component={Link}
+            href="https://www.linkedin.com/in/ouiame-el-fakir/"
+            aria-label="LinkedIn"
+            color="inherit"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FiLinkedin />
+          </IconButton>
+          <IconButton
+            component={Link}
+            href="https://github.com/OuiameFakir"
+            aria-label="GitHub"
+            color="inherit"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FiGithub />
+          </IconButton>
+        </Stack>
 
-            {/* Email */}
-            <a
-              className="btn btn-outline-light btn-floating m-1"
-              href="mailto:ouiamefakir@gmail.com"
-              role="button"
-            >
-              <i className="fab fa-google"></i>
-            </a>
-
-            {/* LinkedIn */}
-            <a
-              className="btn btn-outline-light btn-floating m-1"
-              href="https://www.linkedin.com/in/ouiame-el-fakir/"
-              role="button"
-            >
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            {/* GitHub */}
-            <a
-              className="btn btn-outline-light btn-floating m-1"
-              href=" https://github.com/OuiameFakir"
-              role="button"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-          </section>
-        </div>
-
-        <div className="text-center p-3">
-          © <span className="text-warning"> O</span>EF All Rights Reserved
-        </div>
-      </footer>
-    </div>
+        <Typography
+          variant="body2"
+          align="center"
+          sx={{ mt: 2, color: "text.secondary" }}
+        >
+          ©{" "}
+          <Box component="span" sx={{ color: "primary.main", fontWeight: 800 }}>
+            O
+          </Box>
+          EF All Rights Reserved
+        </Typography>
+      </Container>
+    </Box>
   );
 }
 

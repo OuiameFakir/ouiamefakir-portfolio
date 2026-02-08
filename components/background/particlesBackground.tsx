@@ -3,9 +3,12 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type Container, type ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
+import { useTheme } from "@mui/material/styles";
 
 export const ParticlesBackground = () => {
   const [init, setInit] = useState(false);
+  const theme = useTheme();
+  const isDark = theme.palette.mode === "dark";
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -16,17 +19,17 @@ export const ParticlesBackground = () => {
   }, []);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
+    void container;
   };
 
   const options: ISourceOptions = useMemo(
     () => ({
       background: {
         color: {
-          value: "#ffffff",
+          value: "transparent",
         },
       },
-      fpsLimit: 120,
+      fpsLimit: 60,
       interactivity: {
         events: {
           onClick: {
@@ -50,32 +53,32 @@ export const ParticlesBackground = () => {
       },
       particles: {
         color: {
-          value: "#0000",
+          value: isDark ? "rgba(255,255,255,0.55)" : "rgba(15,23,42,0.35)",
         },
         links: {
-          color: "#0000",
+          color: isDark ? "rgba(255,255,255,0.22)" : "rgba(15,23,42,0.15)",
           distance: 150,
           enable: true,
-          opacity: 0.3,
+          opacity: 1,
           width: 1,
         },
         move: {
           enable: true,
           random: false,
-          speed: 4,
+          speed: 1.6,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 70,
         },
         opacity: {
-          value: 0.3,
+          value: 0.7,
         },
         shape: {
-          type: "triangle",
+          type: "circle",
         },
         size: {
           value: { min: 1, max: 5 },
@@ -83,7 +86,7 @@ export const ParticlesBackground = () => {
       },
       detectRetina: true,
     }),
-    []
+    [isDark]
   );
 
   if (init) {

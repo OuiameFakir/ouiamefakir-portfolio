@@ -6,9 +6,9 @@ import { PrimaryButton } from "../button";
 import { Box } from "@mui/material";
 import { StaticImageData } from "next/image";
 import { CardContainer, CardFooter } from "./card.style";
-import theme from "@/utils/theme";
 import { useTranslation } from "@/src/app/i18n/client";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { hoverLift } from "@/utils/motion";
 export default function ProjectCard({
   lng,
   id,
@@ -39,16 +39,15 @@ export default function ProjectCard({
       key={id}
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
+      viewport={{ once: true, amount: 0.25 }}
+      whileHover={hoverLift}
     >
       <CardContainer>
         <CardMedia
           component="img"
           image={img.src}
           sx={{
-            width: "60%",
-            [theme.breakpoints.down("sm")]: {
-              width: "100%",
-            },
+            width: { xs: "100%", sm: "60%" },
           }}
         />
         <Box
@@ -56,7 +55,7 @@ export default function ProjectCard({
             display: "flex",
             flexDirection: "column",
             zIndex: "1",
-            backgroundColor: "white",
+            bgcolor: "background.paper",
           }}
         >
           <CardContent>

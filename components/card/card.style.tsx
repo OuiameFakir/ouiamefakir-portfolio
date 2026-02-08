@@ -1,23 +1,26 @@
 import { Box } from "@mui/material";
-import styled from "@emotion/styled";
-import theme from "@/utils/theme";
+import { styled } from "@mui/material/styles";
 
-export const CardContainer = styled(Box)({
+export const CardContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   width: "100%",
-  boxShadow: "4px 4px 20px rgba(0, 0, 0, 0.2)",
+  borderRadius: "1rem",
+  overflow: "hidden",
+  border: `1px solid ${theme.palette.divider}`,
+  boxShadow: theme.shadows[4],
+  backgroundColor: theme.palette.background.paper,
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
   },
-});
-export const CardFooter = styled(Box)({
+}));
+export const CardFooter = styled(Box)(({ theme }) => ({
   display: "flex",
-  gap: "0.5rem",
+  gap: "0.75rem",
   padding: "1rem",
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
   },
-});
+}));
 
 // certifications Cards
 
@@ -29,18 +32,23 @@ export const CertifCardImgContainer = styled(Box)({
   width: "15rem",
   height: "10rem",
 });
-export const CertifCardContainer = styled(Box)({
+export const CertifCardContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   gap: "2rem",
   flexDirection: "row",
-  boxShadow: "4px 4px 20px rgba(0, 0, 0, 0.2)",
-});
+  borderRadius: "1rem",
+  overflow: "hidden",
+  border: `1px solid ${theme.palette.divider}`,
+  boxShadow: theme.shadows[3],
+  backgroundColor: theme.palette.background.paper,
+}));
 
 // Skills Card
-export const SkillsCardContainer = styled(Box)({
-  boxShadow: "4px 4px 20px rgba(0, 0, 0, 0.2)",
-  padding: "0.7rem",
-  borderRadius: "0.5rem",
+export const SkillsCardContainer = styled(Box)(({ theme }) => ({
+  boxShadow: theme.shadows[2],
+  padding: "0.75rem 1rem",
+  borderRadius: "0.75rem",
   zIndex: 10,
-  backgroundColor: "white",
-});
+  border: `1px solid ${theme.palette.divider}`,
+  backgroundColor: theme.palette.background.paper,
+}));

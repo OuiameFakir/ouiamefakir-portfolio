@@ -7,6 +7,7 @@ import {
   faGithub as fabGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Box, Typography } from "@mui/material";
 import {
   ContactContainer,
   ContactInfo,
@@ -25,32 +26,42 @@ export default function Contact({ lng }: { lng: string }) {
       <Subtitle>{t("get_in_touch")}</Subtitle>
       <ContactContainer>
         <ContactText>
-          <span className="fw-bold text-warning fs-5">{t("tnx")}</span>
+          <Typography sx={{ fontWeight: 800, color: "primary.main", fontSize: "1.1rem" }}>
+            {t("tnx")}
+          </Typography>
           <br />
           {t("contact_text")}
         </ContactText>
         <ContactInfo>
           <ContactLink href="tel:+212699099123">
             <IconContainer>
-              <FontAwesomeIcon icon={faPhone} className="text-secondary" />
+              <Box sx={{ color: "text.secondary" }}>
+                <FontAwesomeIcon icon={faPhone} />
+              </Box>
             </IconContainer>{" "}
             +212 699099123
           </ContactLink>
           <ContactLink href="mailto:ouiamefakir@gmail.com">
             <IconContainer>
-              <FontAwesomeIcon icon={faEnvelope} className="text-secondary" />
+              <Box sx={{ color: "text.secondary" }}>
+                <FontAwesomeIcon icon={faEnvelope} />
+              </Box>
             </IconContainer>
             ouiamefakir@gmail.com
           </ContactLink>
           <ContactLink href="https://www.linkedin.com/in/ouiame-el-fakir/">
             <IconContainer>
-              <FontAwesomeIcon icon={fabLinkedin} className="text-secondary" />
+              <Box sx={{ color: "text.secondary" }}>
+                <FontAwesomeIcon icon={fabLinkedin} />
+              </Box>
             </IconContainer>
             linkedin.com/in/ouiame-el-fakir
           </ContactLink>
           <ContactLink href=" https://github.com/OuiameFakir">
             <IconContainer>
-              <FontAwesomeIcon icon={fabGithub} className="text-secondary" />
+              <Box sx={{ color: "text.secondary" }}>
+                <FontAwesomeIcon icon={fabGithub} />
+              </Box>
             </IconContainer>{" "}
             github.com/OuiameFakir
           </ContactLink>

@@ -19,12 +19,14 @@ interface IcustomColorsProps {
 export const colors: IcustomColorsProps = {
   main: "#FFFFFF",
   pink: {
-    500: "#AD2184",
+    // Primary accent (cobalt)
+    500: "#2563EB",
   },
   purple: {
-    100: "#DFCCEA",
-    500: "#582E71",
-    600: "#47255B",
+    // Secondary accent (cyan)
+    100: "#CFFAFE",
+    500: "#06B6D4",
+    600: "#0891B2",
   },
   gray: {
     200: "#E5E7EB",

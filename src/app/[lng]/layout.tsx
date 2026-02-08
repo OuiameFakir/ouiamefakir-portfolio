@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 export const metadata: Metadata = {
   title: "Ouiame EL FAKIR Portfolio",
   description:
-    "Ouiame EL FAKIR Portfolio | Personal Portfolio, Ouiame EL FAKIR is a Frontend Developer ",
+    "Ouiame EL FAKIR Portfolio | Personal Portfolio, Full-stack developer (Next.js & Node.js).",
 };
 
 export default function RootLayout({

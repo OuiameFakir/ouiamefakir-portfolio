@@ -7,6 +7,7 @@ import {
   CertifCardPrincipalImgContainer,
 } from "./card.style";
 import { motion } from "framer-motion";
+import { hoverLift, staggerFadeUp } from "@/utils/motion";
 
 export function CertifCardPrincipal({
   id,
@@ -16,25 +17,16 @@ export function CertifCardPrincipal({
   img: StaticImageData;
 }) {
   const ref = React.useRef<HTMLDivElement>(null);
-  const certifAnimation = {
-    initial: {
-      opacity: 0,
-    },
-    animate: (id: number) => ({
-      opacity: 1,
-      transition: {
-        delay: 0.05 * id,
-      },
-    }),
-  };
   return (
     <motion.div
       key={id}
       ref={ref}
-      variants={certifAnimation}
-      initial="initial"
-      whileInView="animate"
+      variants={staggerFadeUp}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.35 }}
       custom={id}
+      whileHover={hoverLift}
     >
       <CertifCardContainer key={id}>
         <CertifCardPrincipalImgContainer>
@@ -50,25 +42,16 @@ export function CertifCardPrincipal({
 }
 export function CertifCard({ id, img }: { id: number; img: StaticImageData }) {
   const ref = React.useRef<HTMLDivElement>(null);
-  const certifAnimation = {
-    initial: {
-      opacity: 0,
-    },
-    animate: (id: number) => ({
-      opacity: 1,
-      transition: {
-        delay: 0.05 * id,
-      },
-    }),
-  };
   return (
     <motion.div
       key={id}
       ref={ref}
-      variants={certifAnimation}
-      initial="initial"
-      whileInView="animate"
+      variants={staggerFadeUp}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.35 }}
       custom={id}
+      whileHover={hoverLift}
     >
       <CertifCardContainer key={id}>
         <CertifCardImgContainer>

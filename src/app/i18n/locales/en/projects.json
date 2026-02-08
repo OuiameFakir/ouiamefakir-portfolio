@@ -1,13 +1,13 @@
 {
-  "my_projects": "My Projects",
-  "my_recent_work": "My Recent Work",
+  "my_projects": "Academic projects & internships",
+  "my_recent_work": "Selected work from my academic projects and internships",
   "Des": {
-    "eshop": "Eshop B2B website, developped during my internship at inwi using NextJS, ReactJS, TypeScript, Material UI.",
-    "todos": "A To do list application. Developped using ReactJS, TypeScript, and Bootstrap.",
-    "ecomerce": "An ecommerce web application, this store offer diffrent type and categories of products. Developped using ReactJS, and Bootstrap.",
+    "eshop": "B2B e‑commerce platform built during my internship at inwi using Next.js, React, TypeScript, and Material UI.",
+    "todos": "A clean to‑do app built with React, TypeScript, and Bootstrap.",
+    "ecomerce": "E‑commerce web app showcasing products and categories, built with React and Bootstrap.",
     "games": "A website of games. Developed using HTML, CSS, and Bootstrap.",
     "note": "A website to take, delete, edit notes. Developed using HTML, CSS, JavaScript."
   },
   "code_url": "The Source Code",
-  "site_url": " The Web Site Hosted"
+  "site_url": "Live demo"
 }
