@@ -66,10 +66,9 @@ export default function ExperienceSection({ lng }: { lng: string }) {
   );
 
   React.useEffect(() => {
-    // Keep default selection stable when switching layouts.
-    if (!active) return;
-    setExpanded(active.id);
-  }, [active?.id]);
+    // Keep mobile accordion aligned with the active selection.
+    setExpanded(activeId);
+  }, [activeId]);
 
   return (
     <Stack spacing={3.5}>

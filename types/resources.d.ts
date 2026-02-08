@@ -2,6 +2,7 @@ interface Resources {
   common: {
     lang: string;
     about: string;
+    experience: string;
     projects: string;
     skills: string;
     contact: string;
